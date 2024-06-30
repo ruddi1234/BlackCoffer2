@@ -56,6 +56,7 @@ function ResponsiveAppBar() {
               alignItems: "center",
               justifyContent: "center",
               paddingLeft: "440px",
+              paddingRight: "440px",
             }}
           >
             Visualization Dashboard

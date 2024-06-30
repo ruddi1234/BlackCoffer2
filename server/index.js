@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import chartRoute from "./routes/chartRoute.js";
 import cors from "cors";
+import filterRoute from "./routes/filterRoute.js";
 
 const app = express();
 dotenv.config();
@@ -19,6 +20,7 @@ await mongoose
   });
 
 app.use("/", chartRoute);
+app.use("/filter", filterRoute);
 
 app.listen(PORT, () => {
   console.log(`Server is running on PORT ${PORT}`);
