@@ -50,7 +50,7 @@ export default function FullScreenDialog() {
               <CloseIcon />
             </IconButton>
             <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
-              Sound
+              Intensity Vs Likelihood
             </Typography>
             <Button autoFocus color="inherit" onClick={handleClose}>
               save
